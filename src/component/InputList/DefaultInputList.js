@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
-export default function InteractiveList(props) {
+export default function DefaultList(props) {
 
-  const items = props.items;
+  const inputs = props.inputs;
 
-  const content = props.items.map((item) =>
-  <tbody key={item.key}>
+  const content = props.inputs.map((input) =>
+  <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td id={item.key} value={item.text}>{item.text}</td>
-      <td><FontAwesomeIcon className="faicons" icon="trash" onClick={ ()=> {props.deleteItem(item.key)}}/></td>
+      <th scope="row">{input.id}</th>
+      <td>{input.content}</td>
+      <td></td>
      </tr> 
   </tbody>
 );
