@@ -11,8 +11,8 @@ export default function DefaultList(props) {
   const content = props.inputs.map((input) =>
   <tbody>
     <tr>
-      <th scope="row">{input.id}</th>
-      <td>{input.content}</td>
+      <th scope="row">1</th>
+      <td>{input}</td>
       <td></td>
      </tr> 
   </tbody>
